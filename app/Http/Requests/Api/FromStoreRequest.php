@@ -24,16 +24,16 @@ class FromStoreRequest extends BaseApiRequest
         return [
             'national_number'          => 'required|numeric',
             'date_of_birth'            => 'required|date',
-            'full_name_english'        => 'required|string',
-            'full_name_arabic'        => 'required|string',
+            'full_name_english'        => 'required',
+            'full_name_arabic'         => 'required',
             'national_id'              => 'required|numeric',
-            'governmental_entity'      => 'required|string',
+            'governmental_entity'      => 'required',
             'landline_number'          => 'required|numeric',
             'id_of_government_agency'  => 'required|numeric',
             'international_code'       => 'required|numeric',
             'phone_number'             => 'required|numeric',
             'email'                    => 'required|email',
-            'documents_upload'         =>  'required|max:5120|mimes:jpg,jpeg,png,pdf' 
+            'documents_upload'         =>  'required|max:5120' 
         ];
     }
 }

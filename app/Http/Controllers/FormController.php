@@ -27,7 +27,7 @@ class FormController extends Controller
             'documents_upload'         => $fromStoreRequest->documents_upload->hashName()
         ]);
         
-        return response()->json(['message' => 'form saved successfully']);
+        return response()->json(['status'=>true,'message' => 'form saved successfully']);
     }
     
 }
