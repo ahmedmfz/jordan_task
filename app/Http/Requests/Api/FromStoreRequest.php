@@ -33,7 +33,7 @@ class FromStoreRequest extends BaseApiRequest
             'international_code'       => 'required|numeric',
             'phone_number'             => 'required|numeric',
             'email'                    => 'required|email',
-            'documents_upload'         =>  'required|max:5120' 
+            'documents_upload'         =>  'required|max:5120|mimes:jpg,jpeg,png,pdf' 
         ];
     }
 }
