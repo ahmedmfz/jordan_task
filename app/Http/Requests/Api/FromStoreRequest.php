@@ -21,6 +21,7 @@ class FromStoreRequest extends BaseApiRequest
      */
     public function rules(): array
     {
+        dd(\request()->all());
         return [
             'national_number'          => 'required|numeric',
             'date_of_birth'            => 'required|date',
